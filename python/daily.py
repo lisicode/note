@@ -20,9 +20,9 @@ loans_balance_df.drop(loans_balance_df[loans_balance_df.累计贷款户数 == 0]
 loans_balance_df.reset_index(drop=True)
 loans_balance_df.set_index('序号', inplace=True)
 loans_balance_list = [
-    [7, 9, 50, 54, 55, 64],
-    [10, 12, 14, 17, 26],
-    [8, 13, 15, 19, 20, 23, 24, 25, 27, 30, 31, 32, 33, 35, 36, 37, 38, 39, 42, 43, 44, 45, 46, 47, 51]
+    [8, 10, 51, 55, 56, 65],
+    [11, 13, 15, 18, 27],
+    [9, 14, 16, 20, 21, 24, 25, 26, 28, 31, 32, 33, 34, 36, 37, 38, 39, 40, 43, 44, 45, 46, 47, 48, 52]
 ]
 for x in loans_balance_list:
     query_df = loans_balance_df.loc[x, ['产品名称', '当日新增放款笔数', '当日新增放款金额', '累计贷款户数', '未结清用户数', '未结清借据正常本金余额']]
